@@ -1,0 +1,16 @@
+PODS:
+  - MKWalkthrough (1.0.0)
+
+DEPENDENCIES:
+  - MKWalkthrough (from `../`)
+
+EXTERNAL SOURCES:
+  MKWalkthrough:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MKWalkthrough: 59372f35a456a120d1dfa57516af4b5eca5e5a6d
+
+PODFILE CHECKSUM: cb91c4fcffa78ea96d826741f832c6f1a5112898
+
+COCOAPODS: 1.2.1

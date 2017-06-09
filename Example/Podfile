@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MKWalkthrough_Example' do
+  pod 'MKWalkthrough', :path => '../'
+
+  target 'MKWalkthrough_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
