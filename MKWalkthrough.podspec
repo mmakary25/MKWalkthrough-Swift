@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "MKWalkthrough"
-  s.version          = "1.0.3"
+  s.version          = "1.0.4"
   s.summary          = "An iOS framework to create an engaging walkthrough with only one line of code."
 
 # This description is used to generate tags and improve search results.
@@ -37,6 +37,6 @@ An iOS framework to create an engaging walkthrough with only one line of code.
   # }
 
   # s.public_header_files = "Pod/Classes/**/*.h"
-  # s.frameworks = "UIKit", "MapKit"
+  s.frameworks = "UIKit", "CoreGraphics"
   # s.dependency "AFNetworking", "~> 2.3"
 end
