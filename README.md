@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/MKWalkthrough.svg?style=flat)](http://cocoapods.org/pods/MKWalkthrough)
 
 ## Screenshots 
-![mkwalkthrough](./MKWalkthrough.gif)
+![mkwalkthrough](./MKWalkthrough.gif  = 355x631)
 
 
 ## Example
