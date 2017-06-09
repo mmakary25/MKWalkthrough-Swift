@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/MKWalkthrough.svg?style=flat)](http://cocoapods.org/pods/MKWalkthrough)
 [![Platform](https://img.shields.io/cocoapods/p/MKWalkthrough.svg?style=flat)](http://cocoapods.org/pods/MKWalkthrough)
 
+## Screenshots 
+![mkwalkthrough](http://particlesdev.com/MKWalkthrough.gif)
+
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
