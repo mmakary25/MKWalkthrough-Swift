@@ -31,9 +31,9 @@ public class MKWalkthrough: NSObject {
         initOverlayView()
         
         if screenSize.height - endingPoint > startingPoint {
-            initHintLabel(frame: CGRect(x: 16, y: endingPoint + 16, width: screenSize.width - 32, height: screenSize.height - endingPoint - 32), withText: hint)
+            initHintLabel(frame: CGRect(x: 16, y: endingPoint + 16, width: screenSize.width - 32, height: screenSize.height - endingPoint - 32), withText: hint, isBellowCircule: true)
         } else {
-            initHintLabel(frame: CGRect(x: 16, y: 16, width: screenSize.width - 32, height: startingPoint - 32), withText: hint)
+            initHintLabel(frame: CGRect(x: 16, y: 16, width: screenSize.width - 32, height: startingPoint - 32), withText: hint, isBellowCircule: false)
         }
         
         animateOverlayView(center: centerInWindow, radius: radius)
@@ -49,7 +49,7 @@ public class MKWalkthrough: NSObject {
         overlayView.addGestureRecognizer(tap)
     }
     
-    static private func initHintLabel(frame: CGRect, withText hint: String) {
+    static private func initHintLabel(frame: CGRect, withText hint: String, isBellowCircule: Bool) {
         hintLabel = UILabel(frame: frame)
         hintLabel.numberOfLines = 0
         hintLabel.textColor = UIColor.white
@@ -58,7 +58,11 @@ public class MKWalkthrough: NSObject {
         
         let size = hintLabel.sizeThatFits(CGSize(width: hintLabel.frame.width, height: CGFloat.greatestFiniteMagnitude))
         if size.height < hintLabel.frame.height {
-            hintLabel.frame = CGRect(origin: hintLabel.frame.origin, size: size)
+            if isBellowCircule {
+                hintLabel.frame = CGRect(origin: hintLabel.frame.origin, size: size)
+            } else {
+                hintLabel.frame = CGRect(origin: CGPoint(x: hintLabel.frame.origin.x, y: hintLabel.frame.origin.y + (hintLabel.frame.height - size.height)), size: size)
+            }
         }
         hintLabel.alpha = 0
     }

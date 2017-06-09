@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "MKWalkthrough"
-  s.version          = "1.0.4"
-  s.summary          = "An iOS framework to create an engaging walkthrough with only one line of code."
+  s.version          = "1.0.5"
+  s.summary          = "An iOS Swift framework to create an engaging walkthrough with only one line of code."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,11 +18,11 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-An iOS framework to create an engaging walkthrough with only one line of code.
+An iOS Swift framework to create an engaging walkthrough with only one line of code.
                        DESC
 
   s.homepage         = "https://github.com/minamakary25/MKWalkthrough-Swift"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.screenshots     = "http://particlesdev.com/MKWalkthrough.gif"
   s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = { "minamakary25" => "minamakary25@gmail.com" }
   s.source           = { :git => "https://github.com/minamakary25/MKWalkthrough-Swift.git", :branch => "master", :tag => s.version.to_s }
